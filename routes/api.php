@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'v1', 'namespace' => 'Api\V1'], function() {
     Route::get('competitions', 'CompetitionController@getCompetitions');
     Route::get('competitions/{id}/ladder', 'CompetitionController@getLadder');
+    Route::put('matches/{id}/update', 'MatchController@updateMatch');
 });

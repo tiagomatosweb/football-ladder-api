@@ -29,6 +29,7 @@ class CreateMatchesTable extends Migration
             $table->foreign('team_b_id')
                 ->references('id')
                 ->on('teams');
+            $table->timestamps();
         });
     }
 

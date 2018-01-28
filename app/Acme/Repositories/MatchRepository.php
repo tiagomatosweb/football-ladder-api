@@ -1,13 +1,13 @@
 <?php namespace App\Acme\Repositories;
 
 
-use App\Competition;
+use App\Match;
 
 class MatchRepository extends Repository
 {
     private $match;
 
-    public function __construct(Competition $match)
+    public function __construct(Match $match)
     {
         $this->match = $match;
     }
